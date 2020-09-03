@@ -1,5 +1,8 @@
 # components
 
+### 功能体验地址
+See [功能体验地址](http://115.28.208.123:8085/components/).
+
 ## Project setup
 ```
 npm install
