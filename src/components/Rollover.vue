@@ -56,29 +56,35 @@ export default class Rollover extends Vue {
         const chartLength: any = newNum.length - newStr.length;
         //数据长度没变
         if (chartLength) {
+          let newBrother = document.createElement("div")
+          newBrother.className = 'newBox'
+          let a = []
           //新增
           for (let i = 0; i < chartLength; i++) {
             const div: any = document.createElement("div");
-            container.insertBefore(div, container.children[0]);
+            newBrother.appendChild(div);
             if (newNum[i] == ".") {
               div.className = "fiexd";
               div.innerHTML = ".";
             } else {
               div.className = "box";
-              console.log(newNum[i]);
               div.innerHTML = getVNode(newNum[i]);
               div.deg = 0;
             }
-            anum.unshift(div);
+             a.push(div);
           }
+             anum.unshift(...a);
+             container.insertBefore(newBrother, container.children[0]);
         }
-
+        // return
         //修改
-        for (let i = newNum.length - newStr.length; i < newNum.length; i++) {
-          if (newNum[i] == newStr[i] || anum[i].innerHTML == ".") continue;
+         let j = newNum.length - newStr.length
+        for (let i=j ; i < newNum.length; i++) {
+          if (newNum[i] == newStr[i-j] || anum[i].innerHTML == ".") continue;
           let deg = anum[i].deg;
           anum[i].deg = deg = deg + 90;
           const index = (deg / 90) % 4;
+           console.log(newNum[i],anum[i],i,anum[i])
           anum[i].children[index].innerHTML = newNum[i];
           anum[i].style.transform = "rotateX(" + deg + "deg)";
         }
@@ -88,6 +94,8 @@ export default class Rollover extends Vue {
 
       setInterval(() => {
         add(this.config.add);
+        //  add(this.config.add);
+        //  add(this.config.add);
       }, 1000);
     });
   }
@@ -120,6 +128,10 @@ export default class Rollover extends Vue {
 .fiexd {
   margin: 5px;
   font-size: 40px;
+}
+
+.newBox {
+  display: flex;
 }
 
 .side {
