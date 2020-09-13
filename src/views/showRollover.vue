@@ -19,7 +19,7 @@ export default class ShowRollover extends Vue {
     config: object = {
         color: ["#8AC6FF", "#5AAFFF", "#0379E6", "#2E9BFF"],
         default: 9,
-        add: 23456.12,
+        add: 236.12,
     }
 }
 </script>
