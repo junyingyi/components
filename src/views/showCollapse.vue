@@ -1,13 +1,12 @@
 <template>
   <div class="home">
-    <div :key="index" v-for="(item,index) in datas">
-      <Collapse
-        :collapseName="'深圳市三栖科技有限公司'"
-        :config="collapseConfig"
-        @click="openDetail(index)"
-        :BindData="item"
-        :ref="'collapse'+index"
-      ></Collapse>
+    <div :key="index"
+         v-for="(item,index) in datas">
+      <Collapse :collapseName="'深圳市三栖科技有限公司'"
+                :config="collapseConfig"
+                @click="openDetail(index)"
+                :BindData="item"
+                :ref="'collapse'+index"></Collapse>
     </div>
   </div>
 </template>

@@ -39,7 +39,6 @@ export default class Rollover extends Vue {
       };
 
       function init() {
-        console.log(newStr.length);
         for (let i = 0; i < newStr.length; i++) {
           const div: any = document.createElement("div");
           container.appendChild(div);
@@ -99,7 +98,6 @@ export default class Rollover extends Vue {
           anum = anum.splice(-j, anum.length - 1);
           j = 0;
         }
-        console.log(newNum.length);
         for (let i = j; i < newNum.length; i++) {
           if (newNum[i] == newStr[i - j] || anum[i].innerHTML == ".") continue;
           let deg = anum[i].deg;
@@ -108,7 +106,6 @@ export default class Rollover extends Vue {
           anum[i].children[index].innerHTML = newNum[i];
           anum[i].style.transform = "rotateX(" + deg + "deg)";
         }
-        console.log(anum);
         num = Number(newNum);
         newStr = newNum;
       }
@@ -123,7 +120,7 @@ export default class Rollover extends Vue {
 </script>
 
 
-<style lang="scss">
+<style lang="scss" >
 #container {
   height: 50px;
   display: flex;

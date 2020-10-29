@@ -21,6 +21,21 @@ const routes: Array<RouteRecordRaw> = [
     path: '/showCollapse',
     name: 'ShowCollapse',
     component: () => import(/* webpackChunkName: "about" */ '@/views/showCollapse.vue')
+  },
+  {
+    path: '/showStart',
+    name: 'ShowStart',
+    component: () => import(/* webpackChunkName: "about" */ '@/views/showStart.vue')
+  },
+  {
+    path: '/showTabbar',
+    name: 'ShowTabbar',
+    component: () => import(/* webpackChunkName: "about" */ '@/views/showTabbar.vue')
+  },
+  {
+    path: '/showSwiper',
+    name: 'ShowSwiper',
+    component: () => import(/* webpackChunkName: "about" */ '@/views/showSwiper.vue')
   }
 ]
 

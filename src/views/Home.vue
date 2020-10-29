@@ -17,6 +17,10 @@ export default class Home extends Vue {
   arrData: object[] = [
     { text: "翻牌滚动", path: "/ShowRollover" },
     { text: "手风琴", path: "/showCollapse" },
+    { text: "星级评价", path: "/showStart" },
+    { text: "tab切换", path: "/showTabbar" },
+    { text: "swiper", path: "/showSwiper" },
+
   ];
 
   // 不能使用箭头函数  否则this指向当前实例
