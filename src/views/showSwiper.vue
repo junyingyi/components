@@ -47,8 +47,8 @@ export default class ShowSwiper extends Vue {
   height: 100px;
   line-height: 100px;
   text-align: center;
-  span { 
-    color: red
+  span {
+    color: red;
   }
 }
 .but {

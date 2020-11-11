@@ -89,6 +89,7 @@ export default class CollapseItem extends Vue {
 
   .box {
     display: flex;
+    width:100%;
     .lable {
       width: 175px;
       font-size: 26px;

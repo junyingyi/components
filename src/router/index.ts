@@ -15,27 +15,32 @@ const routes: Array<RouteRecordRaw> = [
   {
     path: '/showRollover',
     name: 'ShowRollover',
-    component: () => import(/* webpackChunkName: "about" */ '@/views/showRollover.vue')
+    component: () => import(/* webpackChunkName: "showRollover" */ '@/views/showRollover.vue')
   },
   {
     path: '/showCollapse',
     name: 'ShowCollapse',
-    component: () => import(/* webpackChunkName: "about" */ '@/views/showCollapse.vue')
+    component: () => import(/* webpackChunkName: "showCollapse" */ '@/views/showCollapse.vue')
   },
   {
     path: '/showStart',
     name: 'ShowStart',
-    component: () => import(/* webpackChunkName: "about" */ '@/views/showStart.vue')
+    component: () => import(/* webpackChunkName: "showStart" */ '@/views/showStart.vue')
   },
   {
     path: '/showTabbar',
     name: 'ShowTabbar',
-    component: () => import(/* webpackChunkName: "about" */ '@/views/showTabbar.vue')
+    component: () => import(/* webpackChunkName: "showTabbar" */ '@/views/showTabbar.vue')
   },
   {
     path: '/showSwiper',
     name: 'ShowSwiper',
-    component: () => import(/* webpackChunkName: "about" */ '@/views/showSwiper.vue')
+    component: () => import(/* webpackChunkName: "showSwiper" */ '@/views/showSwiper.vue')
+  },
+  {
+    path: '/showList',
+    name: 'ShowList',
+    component: () => import(/* webpackChunkName: "showSwiper" */ '@/views/showList.vue')
   }
 ]
 

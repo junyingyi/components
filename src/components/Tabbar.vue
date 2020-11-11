@@ -36,7 +36,7 @@ export default class Tabbar extends Vue {
   lineTo(index: number = 0) {
     const length = (<any>this).labData.length;
     const maxlength = 100;
-    const distance = 100 / length;
+    const distance = maxlength / length;
     const oneLine = distance / 2;
     this.tabLeft = oneLine + distance * index + "%";
   }
@@ -51,6 +51,7 @@ export default class Tabbar extends Vue {
 <style lang="scss" scoped>
 .tab {
   height: 40px;
+  width:100%;
   display: flex;
   justify-content: space-between;
   position: relative;

@@ -20,6 +20,7 @@ export default class Home extends Vue {
     { text: "星级评价", path: "/showStart" },
     { text: "tab切换", path: "/showTabbar" },
     { text: "swiper", path: "/showSwiper" },
+    { text: "动画列表", path: "/showList" },
 
   ];
 

@@ -65,5 +65,6 @@ export default class ShowTabbar extends Vue {
   left: 0;
   right: 0;
   transform: translateY(-50%);
+  width: 100%;
 }
 </style>
