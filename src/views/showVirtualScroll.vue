@@ -10,6 +10,7 @@
              :key="index">{{item}}</div>
       </div>
     </div>
+    
   </div>
 </template>
 
