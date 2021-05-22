@@ -15,8 +15,21 @@
 
 <script lang="ts">
 import { Options, Vue } from "vue-class-component";
+@Options({
+  // watch: {
+  //   labindex:{
+  //     handler(val,old){
+  //       console.log(val,old)
+  //     },
+  //     deep:true
+  //   }
+  // }
+})
 export default class List extends Vue {
   tabdata: any = [];
+  // labindex: any = {
+  //   index:0
+  // }
 
   mounted() {
     for (let i: any = 0; i < 5; i++) {
@@ -30,6 +43,7 @@ export default class List extends Vue {
     }
   }
   add() {
+    // this.labindex.index++;
     let index: any = this.tabdata.length-1;
     index++;
     this.tabdata.push(index);
@@ -64,6 +78,9 @@ export default class List extends Vue {
   }
   &:nth-child(even) {
     background-color: greenyellow;
+  }
+  &:hover {
+    background-color: gray;
   }
 }
 

@@ -16,11 +16,14 @@ import { Options, Vue } from "vue-class-component";
 export default class Home extends Vue {
   arrData: object[] = [
     { text: "翻牌滚动", path: "/ShowRollover" },
+    { text: "虚拟列表", path: "/ShowVirtualScroll" },
     { text: "手风琴", path: "/showCollapse" },
     { text: "星级评价", path: "/showStart" },
     { text: "tab切换", path: "/showTabbar" },
     { text: "swiper", path: "/showSwiper" },
     { text: "动画列表", path: "/showList" },
+    { text: "动态菜单", path: "/showMenu" },
+    { text: "计数器", path: "/showNumber" },
 
   ];
 

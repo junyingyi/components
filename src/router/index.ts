@@ -40,7 +40,23 @@ const routes: Array<RouteRecordRaw> = [
   {
     path: '/showList',
     name: 'ShowList',
-    component: () => import(/* webpackChunkName: "showSwiper" */ '@/views/showList.vue')
+    component: () => import(/* webpackChunkName: "showList" */ '@/views/showList.vue')
+  }
+  ,
+  {
+    path: '/showMenu',
+    name: 'ShowMenu',
+    component: () => import(/* webpackChunkName: "showMenu" */ '@/views/showMenu.vue')
+  } ,
+  {
+    path: '/showNumber',
+    name: 'showNumber',
+    component: () => import(/* webpackChunkName: "showNumber" */ '@/views/showNumber.vue')
+  },
+  {
+    path: '/ShowVirtualScroll',
+    name: 'showVirtualScroll',
+    component: () => import(/* webpackChunkName: "showVirtualScroll" */ '@/views/showVirtualScroll.vue')
   }
 ]
 
